@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforma Aktywności Pozaszkolnych</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Ekran wstępny -->
+        <section id="intro">
+            <h1>Witaj na Platformie Aktywności Pozaszkolnych</h1>
+            <p>Nasza platforma pomaga nauczycielom zachęcać uczniów do aktywności pozaszkolnych. Dołącz teraz!</p>
+            <button class="btn btn-primary">Zarejestruj się</button>
+        </section>
+        
+        <!-- Lista dostępnych aktywności -->
+        <section id="activities" class="mt-5">
+            <h2>Dostępne Aktywności</h2>
+            <div class="form-group">
+                <label for="sort">Sortuj według:</label>
+                <select id="sort" class="form-control">
+                    <option value="date">Data</option>
+                    <option value="points">Punkty</option>
+                    <option value="name">Nazwa</option>
+                </select>
+            </div>
+            <ul id="activity-list" class="list-group"></ul>
+        </section>
+        
+        <!-- Ranking -->
+        <section id="ranking" class="mt-5">
+            <h2>Ranking</h2>
+            <ul id="ranking-list" class="list-group"></ul>
+        </section>
+        
+        <!-- Profil ucznia -->
+        <section id="student-profile" class="mt-5">
+            <h2>Profil Ucznia</h2>
+            <p>Imię: <span id="student-name">Jan Kowalski</span></p>
+            <p>Szkoła: <span id="student-school">Szkoła Podstawowa nr 1</span></p>
+            <p>Wykonane zadania: <span id="student-tasks">5</span></p>
+            <p>Liczba punktów: <span id="student-points">100</span></p>
+        </section>
+        
+        <!-- Kontakt -->
+        <section id="contact" class="mt-5">
+            <h2>Kontakt</h2>
+            <p>W razie problemów prosimy o kontakt pod adresem email: kontakt@platforma.pl</p>
+        </section>
+    </div>
+</body>
+</html>
